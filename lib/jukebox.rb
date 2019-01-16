@@ -25,11 +25,13 @@ def list(songs)
 end
 
 def play(songs)
-
+  # ask user to input song name or number
+  # output 'playing (song name)'
 end
 
 def exit_jukebox
   puts "Goodbye"
+  # should shut down program
 end
 
 def run
