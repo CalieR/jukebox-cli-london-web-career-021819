@@ -48,16 +48,16 @@ def run(songs)
   loop do
   puts "Please enter a command:"
   command = gets.chomp
-  case command
-    when "help"
-      help
-    when "list"
-      list(songs)
-    when "play"
-      play(songs)
-    when "exit"
-      exit_jukebox
-      break
-    end
+    case command
+      when "help"
+        help
+      when "list"
+        list(songs)
+      when "play"
+        play(songs)
+      when "exit"
+        exit_jukebox
+        break
+      end
   end
 end
