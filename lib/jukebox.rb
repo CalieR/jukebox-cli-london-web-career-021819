@@ -31,7 +31,7 @@ def play(songs)
   # output 'playing (song name)'
   # iterate over the array.  does response == index+1 or song?
   songs.each_with_index do |song, index|
-    if response == song || response == index + 1
+    if response == song || response.to_i == index + 1
       puts "Playing: #{song}"
     else
       puts "Invalid input, please try again"
