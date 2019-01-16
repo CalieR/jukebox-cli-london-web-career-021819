@@ -29,11 +29,11 @@ def play(songs)
   puts "Please enter a song name or number:"
   response = gets.chomp
   # output 'playing (song name)'
-  if (1..9).include?(response) # song name or number
-    # puts "Playing #{response}"
-  else
-    "Invalid input, please try again"
-  end
+    if (1..9).to_s.include?(response) # song name or number
+      puts "Playing #{response}"
+    else
+      "Invalid input, please try again"
+    end
 end
 
 def exit_jukebox
