@@ -28,14 +28,16 @@ def play(songs)
   # ask user to input song name or number
   puts "Please enter a song name or number:"
   response = gets.chomp
-  outcome = ""
   # output 'playing (song name)'
-    if (1..9).to_s.include?(response) # song name or number
-      outcome = "Playing #{response}"
+  # iterate over the array.  does response == index+1 or song?
+  songs.each_with_index do |song, index|
+    if response == song || response == index + 1
+      puts "Playing: #{song}"
     else
-      outcome = "Invalid input, please try again"
+      puts "Invalid input, please try again"
     end
-  outcome
+  end
+
 end
 
 def exit_jukebox
