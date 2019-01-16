@@ -32,7 +32,7 @@ def play(songs) # test passing but function not correct: refactor
   elsif songs.include?(response)
     puts "Playing: #{response}"
   else
-    puts "invalid input, please try again"
+    puts "Invalid input, please try again"
     # songs.each_with_index do |song, index|
     #   if response == song || response.to_i == index + 1
     #     puts "Playing: #{song}"
