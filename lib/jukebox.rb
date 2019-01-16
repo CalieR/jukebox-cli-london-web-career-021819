@@ -41,7 +41,7 @@ def exit_jukebox
   # should shut down program
 end
 
-def run
+def run(songs)
   help
   puts "Please enter a command:"
   command = gets.chomp
