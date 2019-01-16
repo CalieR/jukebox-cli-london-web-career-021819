@@ -25,11 +25,8 @@ def list(songs)
 end
 
 def play(songs)
-  # ask user to input song name or number
   puts "Please enter a song name or number:"
   response = gets.chomp
-  # output 'playing (song name)'
-  # iterate over the array.  does response == index+1 or song?
   songs.each_with_index do |song, index|
     if response == song || response.to_i == index + 1
       puts "Playing: #{song}"
@@ -37,12 +34,10 @@ def play(songs)
       puts "Invalid input, please try again"
     end
   end
-
 end
 
 def exit_jukebox
   puts "Goodbye"
-  # should shut down program
 end
 
 def run(songs)
