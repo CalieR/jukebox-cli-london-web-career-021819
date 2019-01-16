@@ -30,7 +30,7 @@ def play(songs)
   response = gets.chomp
   # output 'playing (song name)'
   if (1..9).include?(response) # song name or number
-    puts "Playing #{response}"
+    # puts "Playing #{response}"
   else
     "Invalid input, please try again"
   end
