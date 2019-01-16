@@ -24,7 +24,7 @@ def list(songs)
   end
 end
 
-def play(songs) # test passing but function not correct: refactor
+def play(songs) 
   puts "Please enter a song name or number:"
   response = gets.chomp
   if (1..9).include?(response.to_i)
@@ -33,13 +33,6 @@ def play(songs) # test passing but function not correct: refactor
     puts "Playing: #{response}"
   else
     puts "Invalid input, please try again"
-    # songs.each_with_index do |song, index|
-    #   if response == song || response.to_i == index + 1
-    #     puts "Playing: #{song}"
-    #   else
-    #     puts "Invalid input, please try again"
-    #   end
-    # end
   end
 end
 
