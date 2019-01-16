@@ -27,15 +27,13 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   response = gets.chomp
-  answer = ""
   songs.each_with_index do |song, index|
     if response == song || response.to_i == index + 1
-      answer = "Playing: #{song}"
+      puts "Playing: #{song}"
     else
-      answer = "Invalid input, please try again"
+      puts "Invalid input, please try again"
     end
   end
-  puts answer
 end
 
 def exit_jukebox
