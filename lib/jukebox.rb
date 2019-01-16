@@ -26,7 +26,14 @@ end
 
 def play(songs)
   # ask user to input song name or number
+  puts "Please enter a song name or number:"
+  response = gets.chomp
   # output 'playing (song name)'
+  if response ==
+
+  else
+    "Invalid input, please try again"
+  end
 end
 
 def exit_jukebox
@@ -36,5 +43,5 @@ end
 
 def run
   help
-  
+
 end
