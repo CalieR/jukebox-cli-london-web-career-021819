@@ -24,7 +24,7 @@ def list(songs)
   end
 end
 
-def play(songs)
+def play(songs) # test passing but function not correct: refactor
   puts "Please enter a song name or number:"
   response = gets.chomp
   songs.each_with_index do |song, index|
