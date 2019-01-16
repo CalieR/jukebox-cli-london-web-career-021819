@@ -30,7 +30,7 @@ def play(songs)
   response = gets.chomp
   # output 'playing (song name)'
   if response ==
-
+    puts "Playing "
   else
     "Invalid input, please try again"
   end
@@ -43,5 +43,17 @@ end
 
 def run
   help
-
+  puts "Please enter a command:"
+  command = gets.chomp
+  case command
+    when "help"
+      help
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+    when "exit"
+      exit_jukebox
+      break
+  end
 end
